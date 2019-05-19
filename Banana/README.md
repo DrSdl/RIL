@@ -11,7 +11,7 @@ Watch this [video](https://www.youtube.com/watch?v=m7aOodyDlkk) to see how the a
 
 The state space of the agent consists of 37 continuous variables: the agent’s velocity (2) and its ray-based perception signals in the forward direction (35). The action space size is discrete and has four possibilities: move forward, move backward, move left or move right. The task is treated as an episodic task and if the average reward over 100 consecutive episodes is higher than +13 the task is solved. 
 
-The “Banana Collector” environment is part of Unity’s [machine learning](https://unity3d.com/machine-learning) example [environments] (https://github.com/Unity-Technologies/ml-agents). Agents can be trained using reinforcement learning, imitation learning, neuro-evolution, or other machine learning methods through a Python API.
+The “Banana Collector” environment is part of Unity’s [machine learning](https://unity3d.com/machine-learning) example [environments](https://github.com/Unity-Technologies/ml-agents). Agents can be trained using reinforcement learning, imitation learning, neuro-evolution, or other machine learning methods through a Python API.
 
 In this repository we use a Q-network for reinforcement learning. This means that the agent is trained model-free; it solves the learning task directly using observations from within Unity’s environment without explicitly estimating the reward and transition dynamics from state to state. The algorithm also is off-policy by using an epsilon-greed policy that follows the greedy policy with probability (1-epsilon) and selects a random action with probability epsilon. Hence the agent explores the environment and only later updates the target policy after a batch of experiences have been collected.    
 
