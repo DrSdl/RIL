@@ -22,4 +22,4 @@ The __Bellman expectation equation__ for v(π) is: v(π,S(t))=Eπ\[R(t+1)+γv(π
 
 The __action-value function__ for a policy π is denoted q(π). For each state and action it yields the expected return if the agent starts in state S, takes action A and then follows the policy for all future time steps. That is, q(π,S,A)=Eπ\[G(t)∣S(t)=S,A(t)=A].
 
-We refer to q(π,S,A) as the value of taking action A in state S under a policy π.
+We refer to q(π,S,A) as the value of taking action A in state S under a policy π. G(t) is the return (discounted return) of all future actions after t, i.e. G(t)=R(t+1)+γR(t+2)+γγR(t+3)+...
