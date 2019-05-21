@@ -23,3 +23,14 @@ The __Bellman expectation equation__ for v(π) is: v(π,S(t))=Eπ\[R(t+1)+γv(π
 The __action-value function__ for a policy π is denoted q(π). For each state and action it yields the expected return if the agent starts in state S, takes action A and then follows the policy for all future time steps. That is, q(π,S,A)=Eπ\[G(t)∣S(t)=S,A(t)=A].
 
 We refer to q(π,S,A) as the value of taking action A in state S under a policy π. G(t) is the return (discounted return) of all future actions after t, i.e. G(t)=R(t+1)+γR(t+2)+γγR(t+3)+...
+
+When working with finite Markov decision process (MDP), the action-value function q(π) corresponding to a policy π can be estimated in a table known as a Q-table. This table has one row for each state and one column for each action. The entry in the s-th row and a-th column contains the agent's estimate for expected return that is likely to follow, if the agent starts in state s=S, selects action  a=A and then henceforth follows the policy π.
+
+A policy is greedy with respect to an action-value function estimate Q if for every state it is guaranteed to select an action such that 
+a=argmax(a∈A(S),Q(S,A)). A policy is ϵ-greedy with respect to an action-value function estimate Q if for every state with probability 
+1−ϵ the agent selects the greedy action, and with probability ϵ, the agent selects an action uniformly at random from the set of available (non-greedy AND greedy) actions.
+
+The constant-alpha method uses the following update for Q-table estimation: Q(S,A) <- Q(S,A) + α(G(t)-Q(S,A)).
+If α=0, then the action-value function estimate is never updated by the agent. If α=1, then the final value estimate for each state-action pair is always equal to the last return that was experienced by the agent (after visiting the pair).
+
+Smaller values for α encourage the agent to consider a longer history of returns when calculating the action-value function estimate. Increasing the value of α ensures that the agent focuses more on the most recently sampled returns.
