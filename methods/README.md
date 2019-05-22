@@ -1,4 +1,4 @@
-## MC methods ##
+ ## MC Methods ##
 One of the simplest learning strategy is to use the equiprobable random policy, use it to collect some episodes, and then consolidate the results to arrive at a better policy. The prediction problem in this context is: given a policy, how might the agent estimate the value function for that policy?
 
 In MC prediction many episodes with a simple policy are collected. To populate a Q-table entry, the return (immediate reward plus all future rewards until the episode ends) that followed when the agent was in that state, and chose that action is recorded. In the event that the agent has selected the same action many times from the same state, we need only average the returns.
@@ -34,3 +34,29 @@ The constant-alpha method uses the following update for Q-table estimation: Q(S,
 If α=0, then the action-value function estimate is never updated by the agent. If α=1, then the final value estimate for each state-action pair is always equal to the last return that was experienced by the agent (after visiting the pair).
 
 Smaller values for α encourage the agent to consider a longer history of returns when calculating the action-value function estimate. Increasing the value of α ensures that the agent focuses more on the most recently sampled returns.
+
+## Temporal Difference Methods ##
+
+Monte Carlo control methods require to complete an entire episode of interaction before updating the Q-table. Temporal Difference methods will instead update the Q-table after every time step. 
+
+Sarsa(0) (or Sarsa) is an on-policy TD control method. It is guaranteed to converge to the optimal action-value function as long as the step-size parameter α is sufficiently small and ϵ is chosen to satisfy the Greedy in the Limit with Infinite Exploration (GLIE) conditions.
+
+Sarsamax (or Q-Learning) is an off-policy TD control method. It is guaranteed to converge to the optimal action value function under the same conditions that guarantee convergence of the Sarsa control algorithm.
+
+Expected Sarsa is an on-policy TD control method. It is guaranteed to converge to the optimal action value function under the same conditions that guarantee convergence of Sarsa and Sarsamax.
+
+Sarsa and Expected Sarsa are both on-policy TD control algorithms. In this case, the same policy that is evaluated and improved is also used to select actions. Sarsamax is an off-policy method, where the (greedy) policy that is evaluated and improved is different from the policy that is used to select actions.
+
+On-policy TD control methods (like Expected Sarsa and Sarsa) have better online performance than off-policy TD control methods (like Q-learning). Expected Sarsa generally achieves better performance than Sarsa.
+
+__Sarsa__
+
+Q(S(t),A(t)) <- Q(S(t),A(t)) + α( R(t+1) + γ Q(S(t+1),A(t+1)) - Q(S(t),A(t)) )
+
+__Sarsamax__
+
+Q(S(t),A(t)) <- Q(S(t),A(t)) + α( R(t+1) + γ max(A) Q(S(t+1),A) - Q(S(t),A(t)) )
+
+__Expected Sarsa__
+
+Q(S(t),A(t)) <- Q(S(t),A(t)) + α( R(t+1) + γ  Sum(A)π(A|S(t+1)) Q(S(t+1),A) - Q(S(t),A(t)) )
