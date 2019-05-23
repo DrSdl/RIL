@@ -1,10 +1,11 @@
 ## Taxi-v2 ##
 
-OpenAI's taxi-v2 environment is described [here](https://github.com/openai/gym/blob/master/gym/envs/toy_text/taxi.py).
+OpenAI's taxi-v2 environment is described [here](https://github.com/openai/gym/blob/master/gym/envs/toy_text/taxi.py). The challenge is based on a publication by [Tom Dietterich](https://arxiv.org/pdf/cs/9905014.pdf).
 
     The Taxi Problem
     from "Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition"
-    by Tom [Dietterich](https://arxiv.org/pdf/cs/9905014.pdf)
+    by Tom Dietterich.
+    
     Description:
     There are four designated locations in the grid world indicated by R(ed), B(lue), G(reen), and Y(ellow). When the episode starts, 
     the taxi starts off at a random square and the passenger is at a random location. The taxi drive to the passenger's location,
@@ -45,11 +46,9 @@ OpenAI's taxi-v2 environment is described [here](https://github.com/openai/gym/b
     
     state space is represented by:
         (taxi_row, taxi_col, passenger_location, destination)
-    """
-    metadata = {'render.modes': ['human', 'ansi']}
+
+The environment looks like this:
+![](https://github.com/DrSdl/RIL/blob/master/Taxi/taxi-v2-environment.png)
     
-    The environment looks like this:
-    ![](https://github.com/DrSdl/RIL/blob/master/Taxi/taxi-v2-environment.png)
-    
-    My solution on Udacity's workspace looked like this:
-    ![](https://github.com/DrSdl/RIL/blob/master/Taxi/taxi-v2-solution.png)
+My solution on Udacity's workspace looked like this:
+![](https://github.com/DrSdl/RIL/blob/master/Taxi/taxi-v2-solution.png)
