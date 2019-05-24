@@ -60,3 +60,13 @@ Q(S(t),A(t)) <- Q(S(t),A(t)) + α( R(t+1) + γ max(A) Q(S(t+1),A) - Q(S(t),A(t))
 __Expected Sarsa__
 
 Q(S(t),A(t)) <- Q(S(t),A(t)) + α( R(t+1) + γ  Sum(A)π(A|S(t+1)) Q(S(t+1),A) - Q(S(t),A(t)) )
+
+
+ ## Q-Networks ##
+ 
+ How to use neural networks for reinforcement learning it not obvious. Overall, a Q-table is a table and not a network. Here comes
+ the idea of function approximation: approximating a Q-table with the help of a NN. In [practice](https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf) this might look like this:
+ As input to the network the representation of a state (i.e. pixels on a screen) is given. The NN outputs values for all the potential
+ actions and the one with the highest value is chosen. [Here](https://deepmind.com/blog/deep-reinforcement-learning/) are more details from DeepMind. Also OpenAI has created a nice [webpage](https://openai.com/blog/spinning-up-in-deep-rl/) explaining deep reinforcement learning.
+ 
+Training such a deep Q-table is prone to blow-ups. In principle a series of mini-episodes or (state,action,reward,next state) sequences are generated and are used for batch-wise training of the network. 
