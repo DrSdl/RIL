@@ -60,6 +60,8 @@ You can also click on the [html version](https://github.com/DrSdl/RIL/blob/maste
 The checkpoints of the trained network is [here (actor)](https://github.com/DrSdl/RIL/blob/master/Reacher/checkpoint_actor.pth).
 and [here (critic)](https://github.com/DrSdl/RIL/blob/master/Reacher/checkpoint_critic.pth).
 
+The solution for the DDPG network is based on Udacity's solution for the Bipedal [agent](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal).
+
 ## Instructions: ##
 Open the notebook and type “Shift”+”Enter” to execute the notebook’s cells. 
 
