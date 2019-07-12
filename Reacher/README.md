@@ -13,7 +13,7 @@ as precisely as possible the targel location. The goal is to maintain the arm's 
 
 In this project the reacher environment is simulated with Unity's ML-Agent [toolkit](https://blogs.unity3d.com/2017/09/19/introducing-unity-machine-learning-agents/).
 
-![](https://github.com/DrSdl/RIL/new/master/one_arm.jpg)
+![](https://github.com/DrSdl/RIL/blob/master/Reacher/one_arm.jpg)
 
 The agent observes 33 variables corresponding to position, rotation, velocity and angular velocities of its arm. Each action state consists
 of a vector of dimension 4 corresponding to the torque applied to the two joints of the arm. A reward if +0.1 is given for each step
@@ -23,7 +23,7 @@ and [here](https://www.youtube.com/watch?v=2N9EoF6pQyE).
 Unity's Reacher environment also allows more than one agent being connected to a brain. This version is useful for algorithms that use
 multiple copies of the same agent do distribute the task of accumulating experience.
 
-![](https://github.com/DrSdl/RIL/new/master/many_arms.jpg)
+![](https://github.com/DrSdl/RIL/blob/master/Reacher/many_arms.jpg)
 
 In this project we have used a a DDPG (deep deterministic policy gradient) algorithm. Quick facts about DDPG [are](https://spinningup.openai.com/en/latest/algorithms/ddpg.html):
 
