@@ -31,7 +31,7 @@ and about MADDPG [here](https://arxiv.org/abs/1706.02275) or [here](https://arxi
 a sample code for MADDPG [here](https://github.com/openai/maddpg).
  
 ## Getting started: ##
-Download the jupyter [notebook](https://github.com/DrSdl/RIL/blob/master/Tennis/Tennis.ipynb). The original notebook from Udacity's course is [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control).
+Download the jupyter [notebook](https://github.com/DrSdl/RIL/blob/master/Tennis/Tennis.ipynb). The original notebook from Udacity's course is [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p3_collab-compet).
 
 You can also click on the [html version](https://github.com/DrSdl/RIL/blob/master/Tennis/Tennis.html) to see the printout of the executed notebook.
 
