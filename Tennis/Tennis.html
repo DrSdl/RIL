@@ -13144,13 +13144,32 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip -q install ./python
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-red-fg">tensorflow 1.7.1 has requirement numpy&gt;=1.13.3, but you&#39;ll have numpy 1.12.1 which is incompatible.</span>
+<span class="ansi-red-fg">ipython 6.5.0 has requirement prompt-toolkit&lt;2.0.0,&gt;=1.0.15, but you&#39;ll have prompt-toolkit 2.0.9 which is incompatible.</span>
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13165,7 +13184,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">unityagents</span> <span class="k">import</span> <span class="n">UnityEnvironment</span>
@@ -13175,6 +13194,39 @@ div#notebook {
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>INFO:unityagents:
+&#39;Academy&#39; started successfully!
+Unity Academy name: Academy
+        Number of Brains: 1
+        Number of External Brains : 1
+        Lesson number : 0
+        Reset Parameters :
+		
+Unity brain name: TennisBrain
+        Number of Visual Observations (per agent): 0
+        Vector Observation space type: continuous
+        Vector Observation space size (per agent): 8
+        Number of stacked Vector Observation: 3
+        Vector Action space type: continuous
+        Vector Action space size (per agent): 2
+        Vector Action descriptions: , 
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13189,7 +13241,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get the default brain</span>
@@ -13212,7 +13264,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># reset the environment</span>
@@ -13237,6 +13289,30 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of agents: 2
+Size of each action: 2
+There are 2 agents. Each observes a state with length: 24
+The state for the first agent looks like: [ 0.          0.          0.          0.          0.          0.          0.
+  0.          0.          0.          0.          0.          0.          0.
+  0.          0.         -6.65278625 -1.5        -0.          0.
+  6.83172083  6.         -0.          0.        ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13249,7 +13325,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>                                         <span class="c1"># play game for 5 episodes</span>
@@ -13274,6 +13350,28 @@ div#notebook {
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total score (averaged over agents) this episode: -0.004999999888241291
+Total score (averaged over agents) this episode: -0.004999999888241291
+Total score (averaged over agents) this episode: 0.09500000160187483
+Total score (averaged over agents) this episode: -0.004999999888241291
+Total score (averaged over agents) this episode: -0.004999999888241291
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13285,10 +13383,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">env</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#env.close()</span>
 </pre></div>
 
     </div>
@@ -13310,6 +13408,910 @@ div#notebook {
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
+<span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># based on: https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/model.py</span>
+
+<span class="k">def</span> <span class="nf">hidden_init</span><span class="p">(</span><span class="n">layer</span><span class="p">):</span>
+    <span class="n">fan_in</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">size</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">lim</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">fan_in</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="n">lim</span><span class="p">,</span> <span class="n">lim</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Actor</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Actor (Policy) Model.&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">seed</span><span class="p">,</span> <span class="n">fc1_units</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span> <span class="n">fc2_units</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize parameters and build model.</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+<span class="sd">            state_size (int): Dimension of each state</span>
+<span class="sd">            action_size (int): Dimension of each action</span>
+<span class="sd">            seed (int): Random seed</span>
+<span class="sd">            fc1_units (int): Number of nodes in first hidden layer</span>
+<span class="sd">            fc2_units (int): Number of nodes in second hidden layer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Actor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">fc1_units</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">fc1_units</span><span class="p">,</span> <span class="n">fc2_units</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">fc2_units</span><span class="p">,</span> <span class="n">action_size</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset_parameters</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">reset_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">*</span><span class="n">hidden_init</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">*</span><span class="n">hidden_init</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">-</span><span class="mf">3e-3</span><span class="p">,</span> <span class="mf">3e-3</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Build an actor (policy) network that maps states -&gt; actions.&quot;&quot;&quot;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">state</span><span class="p">))</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">F</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+    
+<span class="k">class</span> <span class="nc">Critic</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Critic (Value) Model.&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">seed</span><span class="p">,</span> <span class="n">fcs1_units</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span> <span class="n">fc2_units</span><span class="o">=</span><span class="mi">256</span><span class="p">,</span> <span class="n">fc3_units</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize parameters and build model.</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+<span class="sd">            state_size (int): Dimension of each state</span>
+<span class="sd">            action_size (int): Dimension of each action</span>
+<span class="sd">            seed (int): Random seed</span>
+<span class="sd">            fcs1_units (int): Number of nodes in the first hidden layer</span>
+<span class="sd">            fc2_units (int): Number of nodes in the second hidden layer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Critic</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fcs1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">fcs1_units</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">fcs1_units</span><span class="o">+</span><span class="n">action_size</span><span class="p">,</span> <span class="n">fc2_units</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">fc2_units</span><span class="p">,</span> <span class="n">fc3_units</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc4</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">fc3_units</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset_parameters</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">reset_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fcs1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">*</span><span class="n">hidden_init</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fcs1</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">*</span><span class="n">hidden_init</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">*</span><span class="n">hidden_init</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fc4</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">uniform_</span><span class="p">(</span><span class="o">-</span><span class="mf">3e-3</span><span class="p">,</span> <span class="mf">3e-3</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Build a critic (value) network that maps (state, action) pairs -&gt; Q-values.&quot;&quot;&quot;</span>
+        <span class="n">xs</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">leaky_relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fcs1</span><span class="p">(</span><span class="n">state</span><span class="p">))</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">((</span><span class="n">xs</span><span class="p">,</span> <span class="n">action</span><span class="p">),</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">leaky_relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">leaky_relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc4</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># based on: https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/ddpg_agent.py</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">namedtuple</span><span class="p">,</span> <span class="n">deque</span>
+
+<span class="n">BUFFER_SIZE</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mf">1e6</span><span class="p">)</span>  <span class="c1"># replay buffer size</span>
+<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">1024</span>       <span class="c1"># minibatch size</span>
+<span class="n">GAMMA</span> <span class="o">=</span> <span class="mf">0.99</span>            <span class="c1"># discount factor</span>
+<span class="n">TAU</span> <span class="o">=</span> <span class="mf">1e-3</span>              <span class="c1"># for soft update of target parameters</span>
+<span class="n">LR_ACTOR</span> <span class="o">=</span> <span class="mf">1e-3</span>         <span class="c1"># learning rate of the actor </span>
+<span class="n">LR_CRITIC</span> <span class="o">=</span> <span class="mf">1e-3</span>        <span class="c1"># learning rate of the critic</span>
+<span class="n">WEIGHT_DECAY</span> <span class="o">=</span> <span class="mf">0.0000</span>   <span class="c1"># L2 weight decay</span>
+
+<span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:0&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
+
+
+
+<span class="k">class</span> <span class="nc">Agent</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Interacts with and learns from the environment.&quot;&quot;&quot;</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize an Agent object.</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+<span class="sd">            state_size (int): dimension of each state</span>
+<span class="sd">            action_size (int): dimension of each action</span>
+<span class="sd">            random_seed (int): random seed</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state_size</span> <span class="o">=</span> <span class="n">state_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">action_size</span> <span class="o">=</span> <span class="n">action_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">random_seed</span><span class="p">)</span>
+
+        <span class="c1"># Actor Network (w/ Target Network)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span> <span class="o">=</span> <span class="n">Actor</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_target</span> <span class="o">=</span> <span class="n">Actor</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">LR_ACTOR</span><span class="p">)</span>
+
+        <span class="c1"># Critic Network (w/ Target Network)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critic_local</span> <span class="o">=</span> <span class="n">Critic</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critic_target</span> <span class="o">=</span> <span class="n">Critic</span><span class="p">(</span><span class="n">state_size</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critic_optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critic_local</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">LR_CRITIC</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="n">WEIGHT_DECAY</span><span class="p">)</span>
+
+        <span class="c1"># Noise process</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">noise</span> <span class="o">=</span> <span class="n">OUNoise</span><span class="p">(</span><span class="n">action_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span>
+
+        <span class="c1"># Replay memory</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="n">ReplayBuffer</span><span class="p">(</span><span class="n">action_size</span><span class="p">,</span> <span class="n">BUFFER_SIZE</span><span class="p">,</span> <span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">random_seed</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Save experience in replay memory, and use random sample from buffer to learn.&quot;&quot;&quot;</span>
+        <span class="c1"># Save experience / reward</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">)</span>
+
+        <span class="c1">## Learn, if enough samples are available in memory</span>
+        <span class="c1">#if len(self.memory) &gt; BATCH_SIZE:</span>
+        <span class="c1">#    experiences = self.memory.sample()</span>
+        <span class="c1">#    self.learn(experiences, GAMMA)</span>
+            
+    <span class="k">def</span> <span class="nf">do_learn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Learn, if enough samples are available in memory</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">BATCH_SIZE</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+                <span class="n">experiences</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">experiences</span><span class="p">,</span> <span class="n">GAMMA</span><span class="p">)</span>            
+            
+            
+    <span class="k">def</span> <span class="nf">act</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">add_noise</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns actions for given state as per current policy.&quot;&quot;&quot;</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">state</span><span class="p">)</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+        
+        <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="p">(</span><span class="n">state</span><span class="p">)</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="n">add_noise</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">noise</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">noise</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">experiences</span><span class="p">,</span> <span class="n">gamma</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update policy and value parameters using given batch of experience tuples.</span>
+<span class="sd">        </span>
+<span class="sd">        Q_targets = r + γ * critic_target(next_state, actor_target(next_state))</span>
+<span class="sd">        where:</span>
+<span class="sd">            actor_target(state) -&gt; action</span>
+<span class="sd">            critic_target(state, action) -&gt; Q-value</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+<span class="sd">            experiences (Tuple[torch.Tensor]): tuple of (s, a, r, s&#39;, done) tuples </span>
+<span class="sd">            gamma (float): discount factor</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">states</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">next_states</span><span class="p">,</span> <span class="n">dones</span> <span class="o">=</span> <span class="n">experiences</span>
+
+        <span class="c1"># ---------------------------- update critic ---------------------------- #</span>
+        <span class="c1"># Get predicted next-state actions and Q values from target models</span>
+        <span class="n">actions_next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor_target</span><span class="p">(</span><span class="n">next_states</span><span class="p">)</span>
+        <span class="n">Q_targets_next</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">critic_target</span><span class="p">(</span><span class="n">next_states</span><span class="p">,</span> <span class="n">actions_next</span><span class="p">)</span>
+        
+        <span class="c1"># Compute Q targets for current states (y_i)</span>
+        <span class="n">Q_targets</span> <span class="o">=</span> <span class="n">rewards</span> <span class="o">+</span> <span class="p">(</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">Q_targets_next</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">dones</span><span class="p">))</span>
+        
+        <span class="c1"># Compute critic loss</span>
+        <span class="n">Q_expected</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">critic_local</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
+        <span class="n">critic_loss</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">mse_loss</span><span class="p">(</span><span class="n">Q_expected</span><span class="p">,</span> <span class="n">Q_targets</span><span class="p">)</span>
+
+        <span class="c1"># Minimize the loss</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critic_optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+        <span class="n">critic_loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critic_optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+
+        <span class="c1"># ---------------------------- update actor ---------------------------- #</span>
+        <span class="c1"># Compute actor loss</span>
+
+        <span class="n">actions_pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="p">(</span><span class="n">states</span><span class="p">)</span>
+        <span class="n">actor_loss</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">critic_local</span><span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">actions_pred</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+        <span class="c1"># Minimize the loss</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+        <span class="n">actor_loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">actor_optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+
+        <span class="c1"># ----------------------- update target networks ----------------------- #</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">soft_update</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critic_local</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">critic_target</span><span class="p">,</span> <span class="n">TAU</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">soft_update</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">actor_local</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">actor_target</span><span class="p">,</span> <span class="n">TAU</span><span class="p">)</span>                     
+
+    <span class="k">def</span> <span class="nf">soft_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">local_model</span><span class="p">,</span> <span class="n">target_model</span><span class="p">,</span> <span class="n">tau</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Soft update model parameters.</span>
+<span class="sd">        θ_target = τ*θ_local + (1 - τ)*θ_target</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+<span class="sd">            local_model: PyTorch model (weights will be copied from)</span>
+<span class="sd">            target_model: PyTorch model (weights will be copied to)</span>
+<span class="sd">            tau (float): interpolation parameter </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">for</span> <span class="n">target_param</span><span class="p">,</span> <span class="n">local_param</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">target_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">local_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">()):</span>
+            <span class="n">target_param</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">copy_</span><span class="p">(</span><span class="n">tau</span><span class="o">*</span><span class="n">local_param</span><span class="o">.</span><span class="n">data</span> <span class="o">+</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="n">tau</span><span class="p">)</span><span class="o">*</span><span class="n">target_param</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+
+
+<span class="k">class</span> <span class="nc">OUNoise</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;Ornstein-Uhlenbeck process.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">seed</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">theta</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize parameters and noise process.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mu</span> <span class="o">=</span> <span class="n">mu</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">theta</span> <span class="o">=</span> <span class="n">theta</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">=</span> <span class="n">sigma</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reset the internal state (= noise) to mean (mu).&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mu</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update internal state and return it as a noise sample.&quot;&quot;&quot;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span>
+        <span class="n">dx</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">theta</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mu</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">state</span>
+
+
+
+<span class="k">class</span> <span class="nc">ReplayBuffer</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Fixed-size buffer to store experience tuples.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">action_size</span><span class="p">,</span> <span class="n">buffer_size</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seed</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize a ReplayBuffer object.</span>
+<span class="sd">        </span>
+<span class="sd">        Params</span>
+<span class="sd">        ======</span>
+
+<span class="sd">            buffer_size (int): maximum size of buffer</span>
+<span class="sd">            batch_size (int): size of each training batch</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">action_size</span> <span class="o">=</span> <span class="n">action_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="n">buffer_size</span><span class="p">)</span>  <span class="c1"># internal memory (deque)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span> <span class="o">=</span> <span class="n">batch_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">experience</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s2">&quot;Experience&quot;</span><span class="p">,</span> <span class="n">field_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;state&quot;</span><span class="p">,</span> <span class="s2">&quot;action&quot;</span><span class="p">,</span> <span class="s2">&quot;reward&quot;</span><span class="p">,</span> <span class="s2">&quot;next_state&quot;</span><span class="p">,</span> <span class="s2">&quot;done&quot;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seed</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">):</span>
+
+        <span class="sd">&quot;&quot;&quot;Add a new experience to memory.&quot;&quot;&quot;</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">experience</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">next_state</span><span class="p">,</span> <span class="n">done</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Randomly sample a batch of experiences from memory.&quot;&quot;&quot;</span>
+        
+        <span class="n">experiences</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span><span class="p">)</span>
+
+        <span class="n">states</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">state</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">experiences</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]))</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="n">actions</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">action</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">experiences</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]))</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+
+        <span class="n">rewards</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">reward</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">experiences</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]))</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+
+        <span class="n">next_states</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">next_state</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">experiences</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]))</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+        <span class="n">dones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">done</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">experiences</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">))</span><span class="o">.</span><span class="n">float</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="p">(</span><span class="n">states</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">rewards</span><span class="p">,</span> <span class="n">next_states</span><span class="p">,</span> <span class="n">dones</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the current size of internal memory.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## select this option to load version 1 (with a single agent) of the environment</span>
+
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">agent1</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">state_size</span><span class="o">=</span><span class="n">states</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">action_size</span><span class="o">=</span><span class="n">brain</span><span class="o">.</span><span class="n">vector_action_space_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">agent2</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="n">state_size</span><span class="o">=</span><span class="n">states</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">action_size</span><span class="o">=</span><span class="n">brain</span><span class="o">.</span><span class="n">vector_action_space_size</span><span class="p">,</span> <span class="n">random_seed</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># print(states.shape[1],brain.vector_action_space_size)</span>
+
+<span class="c1">#episodes = 2000; mat_t=700</span>
+<span class="k">def</span> <span class="nf">ddpg</span><span class="p">(</span><span class="n">n_episodes</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">max_t</span><span class="o">=</span><span class="mi">1001</span><span class="p">):</span>
+    <span class="n">scores_deque1</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">scores_deque2</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">scores_deque3</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">scores1</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">scores2</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">scores3</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">max_score</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">Inf</span>
+    <span class="k">for</span> <span class="n">i_episode</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_episodes</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">env_info</span> <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">train_mode</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="n">brain_name</span><span class="p">]</span>
+        <span class="n">states</span> <span class="o">=</span> <span class="n">env_info</span><span class="o">.</span><span class="n">vector_observations</span>
+        <span class="c1">#</span>
+        <span class="n">agent1</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+        <span class="n">agent2</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+        <span class="n">score1</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">score2</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">zeit</span><span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_t</span><span class="p">):</span>
+            <span class="c1">#actions      = np.array([agent.act(states[0],add_noise=False)])</span>
+            <span class="n">actions1</span>       <span class="o">=</span> <span class="n">agent1</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="n">states</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">add_noise</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">actions2</span>       <span class="o">=</span> <span class="n">agent2</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="n">states</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">add_noise</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="c1">#print(actions, type(actions[0]))</span>
+            <span class="n">actions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">actions1</span><span class="p">,</span><span class="n">actions2</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+            <span class="n">actions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">actions</span><span class="p">,(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+            <span class="c1">#</span>
+            <span class="n">env_info</span>     <span class="o">=</span> <span class="n">env</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">actions</span><span class="p">)[</span><span class="n">brain_name</span><span class="p">]</span>
+            <span class="n">next_states</span>  <span class="o">=</span> <span class="n">env_info</span><span class="o">.</span><span class="n">vector_observations</span>
+            <span class="c1">#print(next_states)</span>
+            <span class="n">rewards</span>      <span class="o">=</span> <span class="n">env_info</span><span class="o">.</span><span class="n">rewards</span>
+            <span class="c1">#print(rewards)</span>
+            <span class="n">dones</span>        <span class="o">=</span> <span class="n">env_info</span><span class="o">.</span><span class="n">local_done</span>
+            <span class="c1">#next_state, reward, done, _ = env.step(action)</span>
+            <span class="c1">#agent.step(states[0], actions[0], rewards[0], next_states[0], dones[0])</span>
+            <span class="n">agent1</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">states</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">actions1</span><span class="p">,</span> <span class="n">rewards</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">next_states</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dones</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">agent2</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">states</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">actions2</span><span class="p">,</span> <span class="n">rewards</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">next_states</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">dones</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="c1">#</span>
+            <span class="n">states</span> <span class="o">=</span> <span class="n">next_states</span>
+            <span class="n">score1</span> <span class="o">+=</span> <span class="n">rewards</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">score2</span> <span class="o">+=</span> <span class="n">rewards</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="c1">#print(actions)</span>
+            <span class="k">if</span> <span class="n">t</span><span class="o">%</span><span class="k">10</span> == 0:
+                <span class="n">agent1</span><span class="o">.</span><span class="n">do_learn</span><span class="p">()</span>
+                <span class="n">agent2</span><span class="o">.</span><span class="n">do_learn</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">dones</span><span class="p">):</span>
+                <span class="k">break</span> 
+                
+        <span class="n">scores_deque1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score1</span><span class="p">)</span>
+        <span class="n">scores1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score1</span><span class="p">)</span>
+        <span class="n">scores_deque2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score2</span><span class="p">)</span>
+        <span class="n">scores2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score2</span><span class="p">)</span>
+        <span class="c1">#</span>
+        <span class="n">scores_deque3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">score1</span><span class="p">,</span> <span class="n">score2</span><span class="p">]))</span>
+        <span class="n">scores3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">score1</span><span class="p">,</span><span class="n">score2</span><span class="p">]))</span>
+        <span class="c1">#</span>
+        <span class="n">zeit</span><span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">zeit</span>
+        <span class="k">if</span> <span class="n">i_episode</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">Episode </span><span class="si">{}</span><span class="se">\t</span><span class="s1">Average Score1: </span><span class="si">{:.2f}</span><span class="se">\t</span><span class="s1">Score1: </span><span class="si">{:.2f}</span><span class="se">\t</span><span class="s1">Average Score2: </span><span class="si">{:.2f}</span><span class="se">\t</span><span class="s1">Score2: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i_episode</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores_deque1</span><span class="p">),</span> <span class="n">score1</span> <span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores_deque1</span><span class="p">),</span> <span class="n">score2</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">Episode </span><span class="si">{}</span><span class="se">\t</span><span class="s1">Episode Score:  </span><span class="si">{:.2f}</span><span class="se">\t</span><span class="s1">Average Episode Score: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i_episode</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores_deque3</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">score1</span><span class="p">,</span> <span class="n">score2</span><span class="p">])))</span>
+        <span class="k">if</span> <span class="n">i_episode</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">agent1</span><span class="o">.</span><span class="n">actor_local</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;checkpoint_actor1.pth&#39;</span><span class="p">)</span>
+            <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">agent1</span><span class="o">.</span><span class="n">critic_local</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;checkpoint_critic1.pth&#39;</span><span class="p">)</span>
+            <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">agent2</span><span class="o">.</span><span class="n">actor_local</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;checkpoint_actor2.pth&#39;</span><span class="p">)</span>
+            <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">agent2</span><span class="o">.</span><span class="n">critic_local</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">&#39;checkpoint_critic2.pth&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">Episode </span><span class="si">{}</span><span class="se">\t</span><span class="s1">Average Score: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i_episode</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores_deque3</span><span class="p">)))</span>   
+    <span class="k">return</span> <span class="n">scores3</span>
+
+<span class="n">scores</span> <span class="o">=</span> <span class="n">ddpg</span><span class="p">()</span>
+<span class="c1">#print(scores)</span>
+<span class="c1">#print(states.shape,brain.vector_action_space_size)</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">scores</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Score&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Episode #&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Episode 10	Average Score1: 0.01	Score1: 0.00	Average Score2: 0.01	Score2: -0.01
+Episode 10	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 20	Average Score1: 0.00	Score1: 0.00	Average Score2: 0.00	Score2: -0.01
+Episode 20	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 30	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 30	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 40	Average Score1: 0.00	Score1: 0.00	Average Score2: 0.00	Score2: -0.01
+Episode 40	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 50	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 50	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 60	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 60	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 70	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 70	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 80	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 80	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 90	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 90	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 100	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 100	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 100	Average Score: 0.00
+Episode 110	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 110	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 120	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 120	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 130	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 130	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 140	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 140	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 150	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 150	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 160	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 160	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 170	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 170	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 180	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 180	Episode Score:  0.00	Average Episode Score: 0.00
+Episode 190	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 190	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 200	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 200	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 200	Average Score: 0.01
+Episode 210	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 210	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 220	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 220	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 230	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 230	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 240	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 240	Episode Score:  0.01	Average Episode Score: 0.00
+Episode 250	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 250	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 260	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 260	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 270	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 270	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 280	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 280	Episode Score:  0.01	Average Episode Score: 0.09
+Episode 290	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.10
+Episode 290	Episode Score:  0.02	Average Episode Score: 0.10
+Episode 300	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 300	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 300	Average Score: 0.02
+Episode 310	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 310	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 320	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 320	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 330	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 330	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 340	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 340	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 350	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 350	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 360	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 360	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 370	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 370	Episode Score:  0.03	Average Episode Score: 0.09
+Episode 380	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 380	Episode Score:  0.03	Average Episode Score: 0.09
+Episode 390	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 390	Episode Score:  0.03	Average Episode Score: 0.00
+Episode 400	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 400	Episode Score:  0.02	Average Episode Score: 0.00
+Episode 400	Average Score: 0.02
+Episode 410	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: -0.01
+Episode 410	Episode Score:  0.03	Average Episode Score: 0.00
+Episode 420	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 420	Episode Score:  0.03	Average Episode Score: 0.00
+Episode 430	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 430	Episode Score:  0.03	Average Episode Score: 0.09
+Episode 440	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 440	Episode Score:  0.04	Average Episode Score: 0.09
+Episode 450	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 450	Episode Score:  0.04	Average Episode Score: 0.09
+Episode 460	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 460	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 470	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 470	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 480	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 480	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 490	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 490	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 500	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 500	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 500	Average Score: 0.05
+Episode 510	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 510	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 520	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 520	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 530	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 530	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 540	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 540	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 550	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 550	Episode Score:  0.04	Average Episode Score: 0.09
+Episode 560	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 560	Episode Score:  0.04	Average Episode Score: 0.09
+Episode 570	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 570	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 580	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 580	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 590	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: -0.01
+Episode 590	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 600	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 600	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 600	Average Score: 0.04
+Episode 610	Average Score1: -0.01	Score1: 0.00	Average Score2: -0.01	Score2: 0.09
+Episode 610	Episode Score:  0.04	Average Episode Score: 0.09
+Episode 620	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 620	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 630	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 630	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 640	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 640	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 650	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 650	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 660	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.00
+Episode 660	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 670	Average Score1: -0.01	Score1: -0.01	Average Score2: -0.01	Score2: 0.10
+Episode 670	Episode Score:  0.04	Average Episode Score: 0.10
+Episode 680	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.10
+Episode 680	Episode Score:  0.05	Average Episode Score: 0.10
+Episode 690	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 690	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 700	Average Score1: -0.00	Score1: -0.01	Average Score2: -0.00	Score2: 0.00
+Episode 700	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 700	Average Score: 0.05
+Episode 710	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 710	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 720	Average Score1: -0.00	Score1: 0.00	Average Score2: -0.00	Score2: 0.09
+Episode 720	Episode Score:  0.05	Average Episode Score: 0.09
+Episode 730	Average Score1: 0.00	Score1: 0.10	Average Score2: 0.00	Score2: 0.09
+Episode 730	Episode Score:  0.05	Average Episode Score: 0.10
+Episode 740	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 740	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 750	Average Score1: 0.00	Score1: -0.02	Average Score2: 0.00	Score2: 0.10
+Episode 750	Episode Score:  0.05	Average Episode Score: 0.10
+Episode 760	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 760	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 770	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 770	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 780	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 780	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 790	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 790	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 800	Average Score1: 0.00	Score1: 0.10	Average Score2: 0.00	Score2: -0.01
+Episode 800	Episode Score:  0.04	Average Episode Score: 0.10
+Episode 800	Average Score: 0.04
+Episode 810	Average Score1: 0.00	Score1: -0.01	Average Score2: 0.00	Score2: 0.00
+Episode 810	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 820	Average Score1: 0.01	Score1: 0.00	Average Score2: 0.01	Score2: -0.01
+Episode 820	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 830	Average Score1: 0.01	Score1: 0.10	Average Score2: 0.01	Score2: 0.09
+Episode 830	Episode Score:  0.04	Average Episode Score: 0.10
+Episode 840	Average Score1: 0.01	Score1: -0.01	Average Score2: 0.01	Score2: 0.00
+Episode 840	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 850	Average Score1: 0.01	Score1: -0.01	Average Score2: 0.01	Score2: 0.00
+Episode 850	Episode Score:  0.04	Average Episode Score: 0.00
+Episode 860	Average Score1: 0.02	Score1: 0.09	Average Score2: 0.02	Score2: 0.10
+Episode 860	Episode Score:  0.04	Average Episode Score: 0.10
+Episode 870	Average Score1: 0.02	Score1: 0.00	Average Score2: 0.02	Score2: -0.01
+Episode 870	Episode Score:  0.05	Average Episode Score: 0.00
+Episode 880	Average Score1: 0.02	Score1: -0.01	Average Score2: 0.02	Score2: 0.10
+Episode 880	Episode Score:  0.06	Average Episode Score: 0.10
+Episode 890	Average Score1: 0.03	Score1: 0.10	Average Score2: 0.03	Score2: -0.01
+Episode 890	Episode Score:  0.06	Average Episode Score: 0.10
+Episode 900	Average Score1: 0.03	Score1: 0.10	Average Score2: 0.03	Score2: -0.01
+Episode 900	Episode Score:  0.07	Average Episode Score: 0.10
+Episode 900	Average Score: 0.07
+Episode 910	Average Score1: 0.03	Score1: 0.00	Average Score2: 0.03	Score2: 0.09
+Episode 910	Episode Score:  0.07	Average Episode Score: 0.09
+Episode 920	Average Score1: 0.03	Score1: 0.10	Average Score2: 0.03	Score2: -0.01
+Episode 920	Episode Score:  0.07	Average Episode Score: 0.10
+Episode 930	Average Score1: 0.03	Score1: 0.00	Average Score2: 0.03	Score2: 0.09
+Episode 930	Episode Score:  0.07	Average Episode Score: 0.09
+Episode 940	Average Score1: 0.03	Score1: 0.00	Average Score2: 0.03	Score2: 0.09
+Episode 940	Episode Score:  0.08	Average Episode Score: 0.09
+Episode 950	Average Score1: 0.03	Score1: 0.10	Average Score2: 0.03	Score2: -0.01
+Episode 950	Episode Score:  0.08	Average Episode Score: 0.10
+Episode 960	Average Score1: 0.03	Score1: -0.01	Average Score2: 0.03	Score2: 0.00
+Episode 960	Episode Score:  0.08	Average Episode Score: 0.00
+Episode 970	Average Score1: 0.03	Score1: -0.01	Average Score2: 0.03	Score2: 0.00
+Episode 970	Episode Score:  0.08	Average Episode Score: 0.00
+Episode 980	Average Score1: 0.04	Score1: 0.10	Average Score2: 0.04	Score2: 0.09
+Episode 980	Episode Score:  0.08	Average Episode Score: 0.10
+Episode 990	Average Score1: 0.04	Score1: 0.10	Average Score2: 0.04	Score2: -0.01
+Episode 990	Episode Score:  0.08	Average Episode Score: 0.10
+Episode 1000	Average Score1: 0.04	Score1: 0.10	Average Score2: 0.04	Score2: 0.09
+Episode 1000	Episode Score:  0.08	Average Episode Score: 0.10
+Episode 1000	Average Score: 0.08
+Episode 1010	Average Score1: 0.05	Score1: 0.09	Average Score2: 0.05	Score2: 0.10
+Episode 1010	Episode Score:  0.09	Average Episode Score: 0.10
+Episode 1020	Average Score1: 0.05	Score1: 0.10	Average Score2: 0.05	Score2: -0.01
+Episode 1020	Episode Score:  0.09	Average Episode Score: 0.10
+Episode 1030	Average Score1: 0.06	Score1: 0.30	Average Score2: 0.06	Score2: 0.19
+Episode 1030	Episode Score:  0.10	Average Episode Score: 0.30
+Episode 1040	Average Score1: 0.07	Score1: 0.19	Average Score2: 0.07	Score2: 0.20
+Episode 1040	Episode Score:  0.11	Average Episode Score: 0.20
+Episode 1050	Average Score1: 0.08	Score1: -0.01	Average Score2: 0.08	Score2: 0.10
+Episode 1050	Episode Score:  0.11	Average Episode Score: 0.10
+Episode 1060	Average Score1: 0.08	Score1: 0.10	Average Score2: 0.08	Score2: 0.19
+Episode 1060	Episode Score:  0.11	Average Episode Score: 0.19
+Episode 1070	Average Score1: 0.08	Score1: 0.10	Average Score2: 0.08	Score2: 0.09
+Episode 1070	Episode Score:  0.11	Average Episode Score: 0.10
+Episode 1080	Average Score1: 0.07	Score1: -0.01	Average Score2: 0.07	Score2: 0.10
+Episode 1080	Episode Score:  0.11	Average Episode Score: 0.10
+Episode 1090	Average Score1: 0.07	Score1: 0.10	Average Score2: 0.07	Score2: -0.01
+Episode 1090	Episode Score:  0.11	Average Episode Score: 0.10
+Episode 1100	Average Score1: 0.07	Score1: 0.10	Average Score2: 0.07	Score2: 0.19
+Episode 1100	Episode Score:  0.11	Average Episode Score: 0.19
+Episode 1100	Average Score: 0.11
+Episode 1110	Average Score1: 0.07	Score1: 0.00	Average Score2: 0.07	Score2: 0.09
+Episode 1110	Episode Score:  0.12	Average Episode Score: 0.09
+Episode 1120	Average Score1: 0.07	Score1: 0.19	Average Score2: 0.07	Score2: 0.20
+Episode 1120	Episode Score:  0.11	Average Episode Score: 0.20
+Episode 1130	Average Score1: 0.06	Score1: 0.09	Average Score2: 0.06	Score2: 0.20
+Episode 1130	Episode Score:  0.11	Average Episode Score: 0.20
+Episode 1140	Average Score1: 0.06	Score1: 0.00	Average Score2: 0.06	Score2: 0.09
+Episode 1140	Episode Score:  0.11	Average Episode Score: 0.09
+Episode 1150	Average Score1: 0.06	Score1: 0.10	Average Score2: 0.06	Score2: -0.01
+Episode 1150	Episode Score:  0.11	Average Episode Score: 0.10
+Episode 1160	Average Score1: 0.07	Score1: 0.30	Average Score2: 0.07	Score2: 0.29
+Episode 1160	Episode Score:  0.12	Average Episode Score: 0.30
+Episode 1170	Average Score1: 0.08	Score1: 0.20	Average Score2: 0.08	Score2: 0.19
+Episode 1170	Episode Score:  0.13	Average Episode Score: 0.20
+Episode 1180	Average Score1: 0.10	Score1: 0.19	Average Score2: 0.10	Score2: 0.20
+Episode 1180	Episode Score:  0.14	Average Episode Score: 0.20
+Episode 1190	Average Score1: 0.11	Score1: -0.01	Average Score2: 0.11	Score2: 0.10
+Episode 1190	Episode Score:  0.15	Average Episode Score: 0.10
+Episode 1200	Average Score1: 0.11	Score1: 0.29	Average Score2: 0.11	Score2: 0.30
+Episode 1200	Episode Score:  0.16	Average Episode Score: 0.30
+Episode 1200	Average Score: 0.16
+Episode 1210	Average Score1: 0.12	Score1: 0.39	Average Score2: 0.12	Score2: 0.50
+Episode 1210	Episode Score:  0.16	Average Episode Score: 0.50
+Episode 1220	Average Score1: 0.12	Score1: 0.09	Average Score2: 0.12	Score2: 0.10
+Episode 1220	Episode Score:  0.16	Average Episode Score: 0.10
+Episode 1230	Average Score1: 0.13	Score1: 0.19	Average Score2: 0.13	Score2: 0.20
+Episode 1230	Episode Score:  0.17	Average Episode Score: 0.20
+Episode 1240	Average Score1: 0.15	Score1: 0.10	Average Score2: 0.15	Score2: 0.09
+Episode 1240	Episode Score:  0.18	Average Episode Score: 0.10
+Episode 1250	Average Score1: 0.16	Score1: 0.20	Average Score2: 0.16	Score2: 0.09
+Episode 1250	Episode Score:  0.19	Average Episode Score: 0.20
+Episode 1260	Average Score1: 0.18	Score1: 0.90	Average Score2: 0.18	Score2: 0.79
+Episode 1260	Episode Score:  0.21	Average Episode Score: 0.90
+Episode 1270	Average Score1: 0.18	Score1: 0.60	Average Score2: 0.18	Score2: 0.49
+Episode 1270	Episode Score:  0.22	Average Episode Score: 0.60
+Episode 1280	Average Score1: 0.18	Score1: 0.20	Average Score2: 0.18	Score2: 0.29
+Episode 1280	Episode Score:  0.22	Average Episode Score: 0.29
+Episode 1290	Average Score1: 0.20	Score1: 0.10	Average Score2: 0.20	Score2: 0.09
+Episode 1290	Episode Score:  0.23	Average Episode Score: 0.10
+Episode 1300	Average Score1: 0.21	Score1: 0.39	Average Score2: 0.21	Score2: 0.40
+Episode 1300	Episode Score:  0.24	Average Episode Score: 0.40
+Episode 1300	Average Score: 0.24
+Episode 1310	Average Score1: 0.23	Score1: 0.10	Average Score2: 0.23	Score2: 0.09
+Episode 1310	Episode Score:  0.26	Average Episode Score: 0.10
+Episode 1320	Average Score1: 0.26	Score1: 0.40	Average Score2: 0.26	Score2: 0.29
+Episode 1320	Episode Score:  0.28	Average Episode Score: 0.40
+Episode 1330	Average Score1: 0.27	Score1: 0.59	Average Score2: 0.27	Score2: 0.60
+Episode 1330	Episode Score:  0.29	Average Episode Score: 0.60
+Episode 1340	Average Score1: 0.25	Score1: 0.10	Average Score2: 0.25	Score2: -0.01
+Episode 1340	Episode Score:  0.28	Average Episode Score: 0.10
+Episode 1350	Average Score1: 0.26	Score1: 0.70	Average Score2: 0.26	Score2: 0.59
+Episode 1350	Episode Score:  0.29	Average Episode Score: 0.70
+Episode 1360	Average Score1: 0.24	Score1: 0.69	Average Score2: 0.24	Score2: 0.80
+Episode 1360	Episode Score:  0.27	Average Episode Score: 0.80
+Episode 1370	Average Score1: 0.25	Score1: 0.39	Average Score2: 0.25	Score2: 0.50
+Episode 1370	Episode Score:  0.28	Average Episode Score: 0.50
+Episode 1380	Average Score1: 0.24	Score1: -0.01	Average Score2: 0.24	Score2: 0.10
+Episode 1380	Episode Score:  0.27	Average Episode Score: 0.10
+Episode 1390	Average Score1: 0.23	Score1: 0.10	Average Score2: 0.23	Score2: 0.09
+Episode 1390	Episode Score:  0.26	Average Episode Score: 0.10
+Episode 1400	Average Score1: 0.21	Score1: 0.10	Average Score2: 0.21	Score2: 0.19
+Episode 1400	Episode Score:  0.24	Average Episode Score: 0.19
+Episode 1400	Average Score: 0.24
+Episode 1410	Average Score1: 0.19	Score1: 0.00	Average Score2: 0.19	Score2: 0.09
+Episode 1410	Episode Score:  0.23	Average Episode Score: 0.09
+Episode 1420	Average Score1: 0.17	Score1: -0.01	Average Score2: 0.17	Score2: 0.00
+Episode 1420	Episode Score:  0.21	Average Episode Score: 0.00
+Episode 1430	Average Score1: 0.16	Score1: 0.30	Average Score2: 0.16	Score2: 0.19
+Episode 1430	Episode Score:  0.20	Average Episode Score: 0.30
+Episode 1440	Average Score1: 0.18	Score1: -0.01	Average Score2: 0.18	Score2: 0.10
+Episode 1440	Episode Score:  0.21	Average Episode Score: 0.10
+Episode 1450	Average Score1: 0.16	Score1: 0.20	Average Score2: 0.16	Score2: 0.09
+Episode 1450	Episode Score:  0.20	Average Episode Score: 0.20
+Episode 1460	Average Score1: 0.16	Score1: -0.01	Average Score2: 0.16	Score2: 0.10
+Episode 1460	Episode Score:  0.20	Average Episode Score: 0.10
+Episode 1470	Average Score1: 0.16	Score1: 0.30	Average Score2: 0.16	Score2: 0.29
+Episode 1470	Episode Score:  0.20	Average Episode Score: 0.30
+Episode 1480	Average Score1: 0.20	Score1: -0.01	Average Score2: 0.20	Score2: 0.10
+Episode 1480	Episode Score:  0.24	Average Episode Score: 0.10
+Episode 1490	Average Score1: 0.20	Score1: 0.00	Average Score2: 0.20	Score2: 0.09
+Episode 1490	Episode Score:  0.24	Average Episode Score: 0.09
+Episode 1500	Average Score1: 0.22	Score1: 0.39	Average Score2: 0.22	Score2: 0.40
+Episode 1500	Episode Score:  0.26	Average Episode Score: 0.40
+Episode 1500	Average Score: 0.26
+Episode 1510	Average Score1: 0.24	Score1: 0.00	Average Score2: 0.24	Score2: 0.09
+Episode 1510	Episode Score:  0.28	Average Episode Score: 0.09
+Episode 1520	Average Score1: 0.25	Score1: 0.19	Average Score2: 0.25	Score2: 0.20
+Episode 1520	Episode Score:  0.29	Average Episode Score: 0.20
+Episode 1530	Average Score1: 0.28	Score1: 0.79	Average Score2: 0.28	Score2: 0.80
+Episode 1530	Episode Score:  0.32	Average Episode Score: 0.80
+Episode 1540	Average Score1: 0.29	Score1: 0.70	Average Score2: 0.29	Score2: 0.69
+Episode 1540	Episode Score:  0.33	Average Episode Score: 0.70
+Episode 1550	Average Score1: 0.30	Score1: 0.10	Average Score2: 0.30	Score2: 0.19
+Episode 1550	Episode Score:  0.34	Average Episode Score: 0.19
+Episode 1560	Average Score1: 0.33	Score1: 0.90	Average Score2: 0.33	Score2: 0.79
+Episode 1560	Episode Score:  0.37	Average Episode Score: 0.90
+Episode 1570	Average Score1: 0.34	Score1: 0.20	Average Score2: 0.34	Score2: 0.19
+Episode 1570	Episode Score:  0.38	Average Episode Score: 0.20
+Episode 1580	Average Score1: 0.34	Score1: 0.89	Average Score2: 0.34	Score2: 0.90
+Episode 1580	Episode Score:  0.38	Average Episode Score: 0.90
+Episode 1590	Average Score1: 0.36	Score1: 0.50	Average Score2: 0.36	Score2: 0.39
+Episode 1590	Episode Score:  0.40	Average Episode Score: 0.50
+Episode 1600	Average Score1: 0.38	Score1: 0.00	Average Score2: 0.38	Score2: -0.01
+Episode 1600	Episode Score:  0.41	Average Episode Score: 0.00
+Episode 1600	Average Score: 0.41
+Episode 1610	Average Score1: 0.37	Score1: -0.01	Average Score2: 0.37	Score2: 0.10
+Episode 1610	Episode Score:  0.41	Average Episode Score: 0.10
+Episode 1620	Average Score1: 0.39	Score1: 0.70	Average Score2: 0.39	Score2: 0.69
+Episode 1620	Episode Score:  0.43	Average Episode Score: 0.70
+Episode 1630	Average Score1: 0.39	Score1: -0.01	Average Score2: 0.39	Score2: 0.10
+Episode 1630	Episode Score:  0.43	Average Episode Score: 0.10
+Episode 1640	Average Score1: 0.41	Score1: 0.29	Average Score2: 0.41	Score2: 0.30
+Episode 1640	Episode Score:  0.45	Average Episode Score: 0.30
+Episode 1650	Average Score1: 0.44	Score1: 0.69	Average Score2: 0.44	Score2: 0.70
+Episode 1650	Episode Score:  0.48	Average Episode Score: 0.70
+Episode 1660	Average Score1: 0.46	Score1: 0.29	Average Score2: 0.46	Score2: 0.30
+Episode 1660	Episode Score:  0.50	Average Episode Score: 0.30
+Episode 1670	Average Score1: 0.45	Score1: 0.00	Average Score2: 0.45	Score2: 0.09
+Episode 1670	Episode Score:  0.48	Average Episode Score: 0.09
+Episode 1680	Average Score1: 0.41	Score1: 0.20	Average Score2: 0.41	Score2: 0.09
+Episode 1680	Episode Score:  0.45	Average Episode Score: 0.20
+Episode 1690	Average Score1: 0.40	Score1: 0.30	Average Score2: 0.40	Score2: 0.29
+Episode 1690	Episode Score:  0.44	Average Episode Score: 0.30
+Episode 1700	Average Score1: 0.39	Score1: 0.20	Average Score2: 0.39	Score2: 0.19
+Episode 1700	Episode Score:  0.42	Average Episode Score: 0.20
+Episode 1700	Average Score: 0.42
+Episode 1710	Average Score1: 0.39	Score1: 0.10	Average Score2: 0.39	Score2: 0.09
+Episode 1710	Episode Score:  0.43	Average Episode Score: 0.10
+Episode 1720	Average Score1: 0.37	Score1: 0.09	Average Score2: 0.37	Score2: 0.10
+Episode 1720	Episode Score:  0.40	Average Episode Score: 0.10
+Episode 1730	Average Score1: 0.37	Score1: 0.39	Average Score2: 0.37	Score2: 0.50
+Episode 1730	Episode Score:  0.40	Average Episode Score: 0.50
+Episode 1740	Average Score1: 0.34	Score1: 0.70	Average Score2: 0.34	Score2: 0.69
+Episode 1740	Episode Score:  0.37	Average Episode Score: 0.70
+Episode 1750	Average Score1: 0.29	Score1: 0.00	Average Score2: 0.29	Score2: -0.01
+Episode 1750	Episode Score:  0.33	Average Episode Score: 0.00
+Episode 1760	Average Score1: 0.25	Score1: 0.00	Average Score2: 0.25	Score2: -0.01
+Episode 1760	Episode Score:  0.29	Average Episode Score: 0.00
+Episode 1770	Average Score1: 0.25	Score1: 0.30	Average Score2: 0.25	Score2: 0.29
+Episode 1770	Episode Score:  0.28	Average Episode Score: 0.30
+Episode 1780	Average Score1: 0.25	Score1: 0.30	Average Score2: 0.25	Score2: 0.19
+Episode 1780	Episode Score:  0.29	Average Episode Score: 0.30
+Episode 1790	Average Score1: 0.24	Score1: 0.20	Average Score2: 0.24	Score2: 0.29
+Episode 1790	Episode Score:  0.28	Average Episode Score: 0.29
+Episode 1800	Average Score1: 0.27	Score1: 1.20	Average Score2: 0.27	Score2: 1.19
+Episode 1800	Episode Score:  0.30	Average Episode Score: 1.20
+Episode 1800	Average Score: 0.30
+Episode 1810	Average Score1: 0.27	Score1: 0.19	Average Score2: 0.27	Score2: 0.20
+Episode 1810	Episode Score:  0.30	Average Episode Score: 0.20
+Episode 1820	Average Score1: 0.31	Score1: 0.20	Average Score2: 0.31	Score2: 0.09
+Episode 1820	Episode Score:  0.34	Average Episode Score: 0.20
+Episode 1830	Average Score1: 0.32	Score1: 1.10	Average Score2: 0.32	Score2: 1.09
+Episode 1830	Episode Score:  0.35	Average Episode Score: 1.10
+Episode 1840	Average Score1: 0.37	Score1: 2.60	Average Score2: 0.37	Score2: 2.50
+Episode 1840	Episode Score:  0.41	Average Episode Score: 2.60
+Episode 1850	Average Score1: 0.44	Score1: 1.39	Average Score2: 0.44	Score2: 1.50
+Episode 1850	Episode Score:  0.47	Average Episode Score: 1.50
+Episode 1860	Average Score1: 0.48	Score1: 0.19	Average Score2: 0.48	Score2: 0.20
+Episode 1860	Episode Score:  0.51	Average Episode Score: 0.20
+Episode 1870	Average Score1: 0.48	Score1: 0.10	Average Score2: 0.48	Score2: 0.09
+Episode 1870	Episode Score:  0.51	Average Episode Score: 0.10
+Episode 1880	Average Score1: 0.49	Score1: 0.79	Average Score2: 0.49	Score2: 0.80
+Episode 1880	Episode Score:  0.53	Average Episode Score: 0.80
+Episode 1890	Average Score1: 0.52	Score1: 1.20	Average Score2: 0.52	Score2: 1.19
+Episode 1890	Episode Score:  0.55	Average Episode Score: 1.20
+Episode 1900	Average Score1: 0.58	Score1: 2.50	Average Score2: 0.58	Score2: 2.60
+Episode 1900	Episode Score:  0.61	Average Episode Score: 2.60
+Episode 1900	Average Score: 0.61
+Episode 1910	Average Score1: 0.58	Score1: -0.01	Average Score2: 0.58	Score2: 0.00
+Episode 1910	Episode Score:  0.61	Average Episode Score: 0.00
+Episode 1920	Average Score1: 0.61	Score1: 1.70	Average Score2: 0.61	Score2: 1.59
+Episode 1920	Episode Score:  0.65	Average Episode Score: 1.70
+Episode 1930	Average Score1: 0.66	Score1: 0.29	Average Score2: 0.66	Score2: 0.40
+Episode 1930	Episode Score:  0.69	Average Episode Score: 0.40
+Episode 1940	Average Score1: 0.68	Score1: 1.09	Average Score2: 0.68	Score2: 1.10
+Episode 1940	Episode Score:  0.71	Average Episode Score: 1.10
+Episode 1950	Average Score1: 0.62	Score1: 0.50	Average Score2: 0.62	Score2: 0.49
+Episode 1950	Episode Score:  0.65	Average Episode Score: 0.50
+Episode 1960	Average Score1: 0.61	Score1: -0.01	Average Score2: 0.61	Score2: 0.00
+Episode 1960	Episode Score:  0.64	Average Episode Score: 0.00
+Episode 1970	Average Score1: 0.64	Score1: 0.60	Average Score2: 0.64	Score2: 0.49
+Episode 1970	Episode Score:  0.66	Average Episode Score: 0.60
+Episode 1980	Average Score1: 0.62	Score1: -0.01	Average Score2: 0.62	Score2: 0.00
+Episode 1980	Episode Score:  0.65	Average Episode Score: 0.00
+Episode 1990	Average Score1: 0.59	Score1: 0.10	Average Score2: 0.59	Score2: 0.09
+Episode 1990	Episode Score:  0.62	Average Episode Score: 0.10
+Episode 2000	Average Score1: 0.51	Score1: 0.60	Average Score2: 0.51	Score2: 0.49
+Episode 2000	Episode Score:  0.54	Average Episode Score: 0.60
+Episode 2000	Average Score: 0.54
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYUAAAEKCAYAAAD9xUlFAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBodHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAIABJREFUeJzt3XmUW3X9//Hne6bTvcjSYW9pgbIUFSm1iLIpguy4C6LiivpVwd9Xj7L4BdwOoILKDgpYEAEFRJAWKEspZe1CF+hGWwot3ab7dJl2lvfvj9xkMjNJJsnkJjfJ63HOnElubu59507m8773s11zd0RERABqSh2AiIhEh5KCiIgkKCmIiEiCkoKIiCQoKYiISIKSgoiIJCgpiIhIgpKCiIgkKCmIiEhCr1IHkKvBgwf7sGHDSh2GiEhZmTZt2hp3r+9uvbJLCsOGDWPq1KmlDkNEpKyY2TvZrKfqIxERSVBSEBGRBCUFERFJUFIQEZEEJQUREUlQUhARkQQlBRERSVBSEJGKsKmpmf/MeK8o+5q9bCOzlm1IPG9qbuXBacvIdHvj/8x4j7tefJsNW3fwxwkLmDh/NXdOfpu/TFpMU3NrMcLOStkNXhMRSeXnD85i/BsrOXjPQRyy506h7uvMGycDsOTq0wG45ol53PXiEnYb2JuPH7x7l/XnrtjERffPAOCXj83p8vp7G7Zx5VmHhRhx9nSlICIVYfnGJgC27ij+Wffqxu0AbG5qSfl6dzE1bN5e8JjypaQgIhXBSh1AhVBSEJGKkqFaP8SdZn7ZyihjhZYUzGyImT1nZnPN7E0zuyjFOieY2UYzmxH8XB5WPCJS2doL3lJkhc4xlK8wG5pbgJ+4+3QzGwRMM7MJ7t65leUFdz8jxDhERIqiJFcpBRbalYK7r3D36cHjRmAusE9Y+xMRKZkKuEKIK0qbgpkNA44AXk3x8tFmNtPMxptZNPpkiUjZiZfLn7vlZdYWuzdPd20KxYmiIEJPCmY2EHgI+LG7b+r08nRgP3c/HLgBeCTNNi4ws6lmNrWhoSHcgEWk7E1euKYk+62ENoVQk4KZ1RFLCPe6+8OdX3f3Te6+OXg8Dqgzs8Ep1rvd3Ue7++j6+m7vJiciVcgiUCKrTSEDi/2F7gDmuvt1adbZM1gPMxsTxLM2rJhEpDpUQuFcKmH2PvoY8FVgtpnNCJZdCgwFcPdbgc8D3zezFmAbcI5nmjxERCTC0l2sROEqJluhJQV3n0w37SvufiNwY1gxiEj1KJ9iN9o0ollEKkKUT8YjHFoXSgoiUnG8yKOaN25rLur+wqSkICLSQ6XqAhsGJQURqQhWVpU00aWkICIVJ2p9GKPc3tGZkoKIVIYIFLyVcLWipCAiUiD5NnBHKZUoKYhIxYla9VF3ohSukoKIVITks+0oFbJQXtVKSgoiUpHueeUdXlkc7lRqD05b1uF5ORX+6SgpiEhF6NzD5/8eeYNzbn8l1H3+9F8zQ91+KSgpiEjFKbd5NaN0faGkICISsu7GKUQphSkpiEhFqIT6/ChQUhCRilBOo4ajTElBRCpOlKpjyo2SgohUBIvyQIVuROkiR0lBRKTEopTDlBREREJWTu0dSgoiUhGSex8V+85riRjKqPBPR0lBRCpCORfIUQpdSUFEpEDKbCB1SkoKIlJxyq1wjlK4SgoiIgWSrgqrnEZbKymIiEiCkoKIVAQr45bmph2tpQ4hQUlBRCpOlOros9EWoUYQJQURqTgRKmMBTZ0tIlJ05Vt5FC2hJQUzG2Jmz5nZXDN708wuSrGOmdn1ZrbQzGaZ2aiw4hERke71CnHbLcBP3H26mQ0CppnZBHefk7TOqcCI4Oco4Jbgt4hITpKraEo2zUWR3xeG0K4U3H2Fu08PHjcCc4F9Oq12NnC3x7wC7Gxme4UVk4hImNKlonLqGFWUNgUzGwYcAbza6aV9gKVJz5fRNXGIiFSFi+5/nWufml/SGEJPCmY2EHgI+LG7b+r8coq3dEm2ZnaBmU01s6kNDQ1hhCkiZa7DPXZK1J0n3QVBdyOa4+H+Z8Zybnh2YUFjylWoScHM6oglhHvd/eEUqywDhiQ93xdY3nkld7/d3Ue7++j6+vpwghURkVB7HxlwBzDX3a9Ls9qjwNeCXkgfATa6+4qwYhKRyhWFEc35XqCUPvJ2YfY++hjwVWC2mc0Ill0KDAVw91uBccBpwEJgK/CNEOMRkSoRpcFg5Sa0pODuk+kmAbq7Az8IKwYRkWJK26agEc0iIsXVodyN2jwX3YhS9ZGSgohUhAg0KdDY1MKOljaWrNmS0/veWbs1pIhyp6QgIlIgP3toFr94ZDYn/GEiG7buyPp9i9dsYcXGbSFGlj0lBRGpOKWsPHpx4VoANm9vSSzL5iJm/ZbmkCLKjZKCiFSICNQfVQAlBRERSVBSEJGK0GGW1PLqfBQpSgoiIiGLQs+obCkpiIhIgpKCiIRu7opN3Pb8olC2vXpTE1ePn9ehyshVf5S3MOc+EhEB4LTrX8Advnv8AQXf9k8fnMWkBQ28r19dwbddKOWUo3SlICKhC7NQ3NHSGuyjfSdlVAZHjpKCiFQEJYLCUFIQEZEEJQURKZowG4CjcDvOdCIWTkZKCiJSNFErrMNUrp9VSUFEiqZMy8mqoqQgIkVTrPEDUUg+5TSKOZmSgogUTRQKa8lMSUFEKkLUEk7HEdaliyNXSgoiUjRhFo4dex+VUSkcMUoKIlI0HuL5vEWsEj9i4WRNSUFEiibME/ioXR1ELJysKSmIiEiCkoKIFE0hzp5nL9vI/JWNXZZHufoozGqzQtPU2SJSNIUoHM+8cTIAS64+veO2k2dJjUAZnBzD3S+/U7pAcqQrBREJXfysOdTeRxG7Ukj2j1ffLXUIWVNSEJHQxYvrCJzASzeUFESkaMLsIdTxJjtKP/kKLSmY2Z1mttrM3kjz+glmttHMZgQ/l4cVi4iUVrxqJ8yiOsrVR+UkzIbmvwE3AndnWOcFdz8jxBhEpEooJxRGaFcK7j4JWBfW9kWk/BSrV1AUeh+Va5IqdZvC0WY208zGm9lhJY5FREKSKB9DHdGc/bpXjZvLFf9JWbPdY+9t2JZzPFFSyqQwHdjP3Q8HbgAeSbeimV1gZlPNbGpDQ0PRAhSRwkh0SS1SA3B3e7lt0mLGltHYgWIqWVJw903uvjl4PA6oM7PBada93d1Hu/vo+vr6osYpIoUT7jiF8LZdTUqWFMxsTwu6C5jZmCCWtaWKR0TCY4Tf+6hcq2uiJuveR2Z2DDDC3e8ys3pgoLu/nWH9+4ATgMFmtgy4AqgDcPdbgc8D3zezFmAbcI5HbZpDESmMxIjmIlUfqSTJW1ZJwcyuAEYDBwN3ESvc/w58LN173P3cTNt09xuJdVkVkSoR7jiF5P0oK+Qr2+qjzwBnAVsA3H05MCisoESksiSmuShS7yNdKeQv26SwI6jacQAzGxBeSCJSacLqffTGextZ3bi9wz4A3l27taD7qSbZtin808xuA3Y2s+8A3wT+El5YIlKRCpgTNm9v4YwbJieeJ3c+emDq0sLtqMpklRTc/Q9mdhKwiVi7wuXuPiHUyEREMti2o7XDc9UYFUa3ScHMaoEn3f2TgBKBiORMXVLLR7dtCu7eCmw1s/cVIR4RqWCFLLg7D1bT4LXCyLZNoQmYbWYTCHogAbj7haFEJSIVpdjTXEj+sk0Kjwc/IiI5K0aXVCmMbBuax5pZb+CgYNF8d28OLywRqUTKCdGX1TgFMzsBeAu4CbgZWGBmx4UYl4hUkMSd1zpdKvxzylKmLFlHW5vzuyfm0RCMOZDSyXbw2rXAye5+vLsfB3wK+GN4YYlIJUlXffSzh2bxhVtf5qVFa7l54iIueXgW23a08uHfPs2kBZomvxSyTQp17j4//sTdFxBMbici0lOtQbbY3tLGoobNNDRu5+rx83LaRrl3PopK76lsG5qnmtkdwD3B8/OAaeGEJCIVJzFLavZvqbb2h6g0wmebFL4P/AC4kNifdxKxtgURkUiISJla9rJNCr2AP7v7dZAY5dwntKhEpCIVcpxCRGpbKk62bQrPAP2SnvcDni58OCJSiYoxTkFJojCyTQp94/dTBgge9w8nJBGpVKriib5sk8IWMxsVf2Jmo4ndQlNEpFvpximkXrfj8x/f/zrDLu46ocLvn5zfZVnY7n55ScpYKkm2bQo/Bv5lZsuJJfu9gS+FFpWIVJT2uY9y98iM5SmX3z+l+PdMGPvSkqLvs9gyXimY2YfNbE93nwIcAjwAtABPAG8XIT4RqSA5dUmNSh/NKtNd9dFtwI7g8dHApcSmulgP3B5iXCJSQdprhFTQR1131Ue17r4uePwl4HZ3fwh4yMxmhBuaiFSK9jaF8PcRpmLso9S6u1KoNbN44jgReDbptWzbI0REgOyuE6xKO5dGJd90V7DfBzxvZmuI9TZ6AcDMDgQ2hhybiFSIYoxTKEYbRJjldlSaUDJeKbj7b4GfAH8DjvH2o14D/Cjc0ESk0qxubOKlRWu6LI8Xti+81fW1ZKs2NYUQVfZSnc2//u76lOvmWshva27JI6LC67YKyN1fSbFsQTjhiEgl++odrwGw5OrT064zZ8WmtK+d+ucXCh5TT33m5pcKsp2LH5pdkO30VLaD10RE8pZLffnWHenPmNdt2ZH2tXJvBH533dZShwAoKYhIUZR3gZ2PQk7+V0xKCiISKVFOH2H2jIrKhU5oScHM7jSz1Wb2RprXzcyuN7OFZjYreW4lEaksORV4USkdq1SYVwp/A07J8PqpwIjg5wLglhBjEZESqpRiPpd8lWvvo7LoktoT7j4JWJdhlbOBuz3mFWBnM9srrHhEpDxUSgLJVURyQknbFPYBkqc5XBYsE5GQzVy6gVP+NCljT59srduygxOvnciihs1p1+nuDPvRmV1nQnXvOCCtuymr800m59z+MuNnr8jz3QUUkaxQyqSQ6m+Y8rCY2QVmNtXMpjY0NIQclkjl++24ucxb2cjMpT2fmGDCnJUsatjCbc8vSrtOdw20D05b1r5usOr8VY0Mv2Rc1nHkW6a+sngd3793ep7vLpyo9FYqZVJYBgxJer4vkHLidHe/3d1Hu/vo+vr6ogQnUskS005EpCBKlm8Pn6hNtZ1rNG0RCb+USeFR4GtBL6SPABvdPQLXcCKVr6Ynd72JqHIfvBYVoc10amb3AScAg81sGXAFUAfg7rcC44DTgIXAVuAbYcUiIh3Fy89inZ3mUl7nW7bn87Zcry7CTDxRudIJLSm4+7ndvO7AD8Lav4ik136hEI2CqBCi9klyLeRVfSQiJROvty/WyWlOY9dCi6KrXD9/NVRQKSmIVIGGxu2s2Lgt8TzbJoVl67fS0tqW1T4yFbCdq12Wb9iWZs38dVdgv7N2S5dluebElUWaunvt5u00NjUXZV+dKSmIVIFP3/QiJ183qcvyTFUcqzY1ccw1z3H1+HkFj+ejVz9LU3NrytfCqLZ/bt5qjv/9RB6flX9flqbm1oyztHbWk4uwI3/zNMf+7rkebCF/SgoiVeC9Ddto3N4+UC1xz+QM71m/NVYAdnfjm3xtb8nuCqQQ4vdoeGN5x3EZudT778jyiqlQNmzVlYKIFElN+0CFDOvEVmorQMNDTr2PqqLmPrqUFESqULzYzVTgZ7NOj2JIU/YXc7hBLp8s17Ai0sM0Z0oKIlUoUX2UReNwIQq3VAV9uu1qEFppKSmIVKEsao+orSlc9VExZJNLOq+Sy0erlmSlpCBShRJdUrOqPupmWwVuAyjqOIXIDXkrPSUFkaoUK3r/8NR81qfpZhlvaH5vwzZueOYtbpm4KGVf/87unPw2b61qTDxftn4rS9dlPy5h4oL8ZkLO5qx/5cYmrn/mrZSvzVq2IcO2Pe37MkREU3Nrj7r0HvSL8WzYmn032EJQUhCpQvErhQWrNnPlY29mXKe1zbl2wgKueWIeX7nj1W63/av/zuGMGyYnnn/n7mk5xfZYinsr9FT8iujh19/jugkLkpa3r3PWjS8C8I27XuOWiR2nAZ+3spHbJy3Oeb/3vPwOt2aYUrw7O1ra+Om/ZuX9/nwoKYhUoZqkOpqW1tSn2Kmq0LduTz3grLPkMQjbCnAjn2wUqsr/ufkNXPNEx7P71jwnJirE2IbtLdkd80JRUhCpQsntALU1qUvTfBpWc5oErsDV+VFrD3dPmqK8jCgpiFSh5LIqXVIIeyrnQvdqimL5G8WYuqOkIFKFsksKKZZ1s90SXijkJeyrizLMCUoKItUoufqorjb7oivT1YOTW0Ff6CuRfDYXZpdUR9VHIlIusrhSyEcuBX2hi+Molr9RjKk7SgoiZWbt5u00NG7v0TaSy6q/v/JuwfrCv7RobdbrFrpNYc3m9J8h3a5GXv5kh+fDLn485Xr5FO4X3T+D3zw+N/c3lpiSgkiZOfI3T/Ph3z7do2107lmUanBZPm0KuYwxiFpvoUKbG0zXXW6UFEQk9YR1eVTw5NamkPPmpQiUFEQka90V5LlUCWneoWhSUhCpQtlUked1Jp/De/IcJCwhU1IQkTTVRymWpcoUSe/NpZxvK2JWKOf8U+xqNiUFESmYsEdBS/h6lToAESm8jduambF0A8cfVM/Mpe1TQo+bvYLm1rYuVwaLGrYwacEaTjx0d9Zu3sGIPQayelNTzvvNJSU8M3dVztsvlVLeNzre9vLXFxbzgX3ex1H77xbq/pQURCrQ/9w7jRcXrmX6/53E2Te9mLR8OgBDd+3fYf0L73sdgDsmL2bN5h3st1t/3lm7tct2CznNxZWPzcl+5SoWP6a/e2I+3zxmeOhJQdVHIhVowarNADSnmbp5U1NzyuXxAWCpEkI2VHkUnjZ3Cjj4PC0lBZEKFD+7LHgZUsAuqeWklNNVxA9pm3tBpyRJR0lBpCLFSpJ090QIrWipzJxQUvE2hTbP7x4XuQo1KZjZKWY238wWmtnFKV7/upk1mNmM4OfbYcYjUi3ivT0LXYZ026YQ0axQ7hcw8V5dxag+Cq2h2cxqgZuAk4BlwBQze9TdO7cuPeDuPwwrDpFqFC9E0pUhYZ1xlnvhG0Xu7Um+GFNxh3mlMAZY6O6L3X0HcD9wdoj7E5GAd/rdWVhFi9oUCs9pP65lfaUA7AMsTXq+DDgqxXqfM7PjgAXA/3P3pSnWEalqixo2c+F9r3PY3julfH3lxia+ftdrjP3mGPbYqS8btsZ6Fz31ZuqxAGu35DdVdqbBaQ9OW9bh+al/foGd+9XR3FraRHHan1/g2IMG5/y+YRc/zo8+cSBPz13NT08+KITIsrNpWzMjLhsPFKdNIcykkCr6zt+Ox4D73H27mX0PGAt8osuGzC4ALgAYOnRooeMUibzrn3mLN5dv4s3lqadjvvfVd5i3spEHpizlwhNHJJZf+u/ZxQqxi/jU0f1715YsBoA5KzYxsE9+Rd0Nzy4E4FtjpxYypJzMW9mYeFzu1UfLgCFJz/cFOky27u5r3T1+t5C/AEem2pC73+7uo919dH19fSjBikj3KrNyqHyU+ziFKcAIMxtuZr2Bc4BHk1cws72Snp4FlN9tikQko0g0M5ThbTFTKcaVQmjVR+7eYmY/BJ4EaoE73f1NM/sVMNXdHwUuNLOzgBZgHfD1sOIRkZ7Lp4CPRONzBEIohGI0eIc695G7jwPGdVp2edLjS4BLwoxBREorCjmhUpR7m4KIiBRQuXdJFZEQNTW30reuuD17HGfFxm3UD+zDwobN1JjR0k2X00hUH1WImiJkBSUFkTL16//O4bef+UBR99nU3MbRVz3LKYftyRNvrszqPUoKhVP2cx+JSHgmzCndTWqyTQgQjTbeqM7JlKty75IqIhIJpbxzWiHV6kpBRMqdao8KR72PREQKoFKqj4oxTkFJQUSkTOhKQUREEmqKUGKrS6pIDt5Zu4Uf3fc6l58xktHDdu3y2oQ5qxg+eAC//u8crvrsB1mzeTtnHr43T89ZRa9a44SDd89pfzOWbmDR6s0pexqtbtzOC281cOm/Z7NleysA101YwJK1W/L/gBVqypL1pQ6hIIpxpWCZ5kePotGjR/vUqaWbxlaq29FXPcOKjU0ALLn69A6vfezqZ3lvw7Yu71ly9ekMu/jxlO/pTvx9IgDXn3sEZx2+d17vNbNp7j66u/VUfSSSg8amlgyvNRcxEqlGGqcgEjHldmUtlUUNzSIR06acICWkKwUREUnQ3EciEVMpg6CkPKn6SCRi8mlSaM2yzinb9aR66X4KUvHcnd8/OZ+bJy5KLMum2+bkt9bwlTteZeJPT2DY4AEMu/hxvnvc/lxy2qEMu/hxvnzUUE4auQffuGsKQOK1ZP+cspSfPTQr8fzJHx/HwXsO4rbnF3HV+Hl86rA9eO3tdbx++cnc9eLb/PKxOR3eH+8uOvnnH2ffXfqnjfWAS9tvPrhkzRb23aUfH792Ih8asgs3nHsEp/35BZat38qmDD2bRAC27mgNfR+6UpCSGvvSkg4JIVuPzHgPgNeWrEssu23S4sTjf7z6Lg9OW5bytbg7X3y7w/NJCxoAuP6ZtwB48s1VrN8a62aaKcZjrnku67hP+MNEfjtuLkvXbeOxmcsBmLNikxKCZGXt5u2h70NJQUpq+rsb8npf/DK6rQdVLp0b7XpyM5hcqn5eXrQ27/1IdSvGndeUFKQs1Qb/HD2phq/t9O2PbyvVJrv7V2xubct6v7oTmeRLDc1S8fItHuNn+a3u6QeUdbPxzjde6Ulh3ZJDdmru5p7GIqWkpCBlKX4HqrY2z/tqofOVeKaqqO5O0Jpbsr9S2JHDuiLJinGVqaQgZam9+sjT1+d3U5B3rp+NbyXV27q7nWNzW/YFfS5VTSLJitFtWV1SC6yltY37piylT20Ng/r24sRD96B3r1jufX5BA7967E2+fez+nDtmKDta2pi0oIFPjtyjy3ZunriQifMbOO39ezJ62K68f5/3dVnnX1OX8vrSDRxYP5CHX1/GH75wOIfsuVNon23aO+sYskt/dt+pb07vm7dyE71qajhw94GJZZuamvnO2Km8+va6Luvf/9q7jNpvF657agED+vTioenLGDN8V2rNGLXfzqzatJ3n5q0G4N11WztMK331+HmJx4/PWtFhu399YTEPT3+PXrXGio1NNDR27Mlx3YQFTJy/mu2dzuQfm7mclZuaMn7G06+fnHUPotVJ+02OV6Q7xUgKVTV19k3PLeRTh+3ZoXAqtJueW8jvn5yfeP7d4/fnklNj/eOTp0F++ZJPMPald7j1+UX84ztH8dEDBideu/ap+dzw7MIO2/3e8QfwzWOGsfug9gI507TKXxy9LwfvuRO//m+sb/3QXfvz7rqtGWM/oH4Aixq6zsV/5uF7U1drPDz9vYzvFym0i04cwZ+DLsJh2mfnfimnPe9s/8EDWLwmv/tVnDRyj5T3xcjFuAuPZeTe+Z34ZTt1dtVcKTQ2NfP7J+fzt5eWMOWyT4a2n2XrO36xlqYpiJua23h3XezLtX5LxymXOycEgFufX8Rbqxq54+sfziqOf05d1uF5dwkBSJkQgER/esndP759FF/+66s93s75R+/H6sbtjH9jJQAf2X9XLjrxIL41dkqXAU03nzeKTx66Bwf9YjwAHxqyM4/84GM0t7Yx4rLYsgW/OZXWNufQy59IvO+4g+qZtKCBm88bxScO2Z3m1jZ696qhtc0ZefmTifV26V/HCz//BO+/4klSOfPwvVm3ZTsvLox1vf3d5z7I9HfXc/XnPpj2RGbJ1acz9qUlLFu/lctOH5lYvr2lNZEUPnrAbryUoTvv/oMH8MxPjufkP07irdWbO7xWP6hPlyvDvnU1zPnlKbS5U1tjtLR54vgk+9yofXloeuz/6U/nfIhD99qJb4+dyvPBuBaAYw4czB1fH02fXrVA+wnbgt+cmqgp2Li1mcN/9VTa+JN1TlKzrzyZQX3rsnpvT1VNUohX+W4rwojAbLTkUa/c1NIee7ld4VWDjx9cz3Pz2wuKXjXGRw8cnHKE9jfueq3DugC3f/VITj5sz4z7iBc2dbU1HH3Absz51SldCtoaI1EQQft3pS6pD27y653VGPStq6VvXW1i2TEHDmbywjXc/c0xHHdQfdr3/ugTB/KTkw9m/ZYdHPHrCQB88cND+OKHh6R9z3eP3x+A8z86rMtrdUn3n+zVuQ9xkuu+eDifHbUv0N7elOz+Cz7Cidc+32FZa5tTU2PUBO1FdbWp2416JW3PMOpqaxjQp/3YZBqBn+k456JYCQGqqKE5l4bAYuhpt0R1a4y+XPuU12Uo9DrrlcMgpty/KV23Hf8o3W0r3jU3l0FWLRm+y8nbyfSZkw91qvOlVMuy/R9KdV/k2jxulpzvZIpFGJrQQahJwcxOMbP5ZrbQzC5O8XofM3sgeP1VMxsWVizxL16Rj29aLXkkqeQeMPm8X8LV5V8+w5ctVfGQU1LIuG7Pxl+kKoTi40K621a8ITSXgbfZXjVnSgqZEktM/idRqT5ymouKnLeTjWKXWaElBTOrBW4CTgVGAuea2chOq30LWO/uBwJ/BK4JK554N8BSnV937jWQz5l+8pmGrhSiL9cZCXrlUNL0zpgUOn43cq2pTHWFk1jSzdcuXjjHq3CyOcvNduBfpqSZvI1U++xJbWuqRJjPlUK+YwyKcQ+FZGFeKYwBFrr7YnffAdwPnN1pnbOBscHjB4ETLaQjsKPEfcM7903vaV/1fNokpLhqM3yVU72SS3VTLgmkNcurynjbQ+rYgnW6yQrxfcU/S6Zj0P6e7ArLTJ85OSkUurktVXjp2h8yyXv0fp7vy1eYDc37AEuTni8Djkq3jru3mNlGYDdgTaGDeWlhbJObt7dw0nXPd7N2/jr3ehg3eyUnXfd8l7OEn/xzZqJ3wRWPvsmfnl7Q7bZfXLg2EXsu0ypIcfTp1KjYv0/6f6/kRty4XE6H+vdu33a/ulq2Nbd3Quh8FptttVQ8/toUBV6/3rF4uxvEF29YjX+WgX27L2KybX/o37vrMYtL3kLfFOsln2v27lXDjpY2dumfXeNtcmNxfDP9MsSSTYzd6VvXvs9MnzsMYSaFVMegc0mWzTqY2QXqhonLAAALBElEQVTABQBDhw7NK5iRe8cGf40ZtiuDB/XOaxvZGD54AE/NWcWgvr1obGrhk4funvhSDexbx8ylGzh8yM7ss3NfDt1rEE/PXc2Y4bt02MbS9Vtpam7j8jNG8qv/ts/hf8LB9R2+IG+n6C8d73o3oHctO/fvnVXf67j96wewOEW31GG79Wft5h00bk89OKuu1nKuzoq/58DdB9K3roY33tsEwJ479aV/79pEX/Axw3fltU4D3A7ZcxB96mqZuXRD2pjNup4xDurTi5oao7GpmZvPG8X3/j6dc8cMYVNTCwtWNnLGB/dm5N478d17pnY5O9xn537ssVMfdupXx9Ql69kcHIupv/gktz2/iB0tbfzoxBEcd1A9l/37DU48ZHcuO73j/RuS/ebT72fY4AEcUD+Qn/5rJl8+aigfSDFAsbNxFx7LmTdO5uJTD0ksu+P80Ylur585Yh8+ccjuADx+4TF85a+vcutXjkyse8WZIzlq+G6J57/+9PtZvmEbO/er4/NH7ssdk9/muBFdexf95tMfYNhuAzr0PBr7zTGcf+dr7D94ALsN7M3wwQP4+seGA9CnVy2XnHoIJx7acWDmPd8aw/qtzazYsI3jD67nkdeX8/0TDsj4ma/67Ac4aI+BHLj7IHbqV8fxI+r5zt1TGdCnF8cdVM9Tb67kC6P3Tax/y3mjuOj+13ln7VbOO2o/Tj5sDw6oH8CxIwYz/Z31/OeHx/DQ9GUpP+dNXx7FPa8s4byj9uNH973OL04/lC+MHsKW7S3su0s/DgvGCPzvSQcxfvZKrvrcB1LGPP6iY7vMhrvbwD6cO2YoE+ev5twxQ6mtMXbqV8cri9cyeEBv1mzZwZkf3JtL/z2bu74+hlWNTVz68GxuSfr7FUNog9fM7GjgSnf/VPD8EgB3vyppnSeDdV42s17ASqDeMwTVk8FrIiLVKtvBa2G2KUwBRpjZcDPrDZwDPNppnUeB84PHnweezZQQREQkXKFVHwVtBD8EngRqgTvd/U0z+xUw1d0fBe4A7jGzhcA6YolDRERKJNQRze4+DhjXadnlSY+bgC+EGYOIiGSvakY0i4hI95QUREQkQUlBREQSlBRERCRBSUFERBLK7s5rZtYAvJPn2wcTwhQaBaC4chPVuCC6sSmu3FRiXPu5e/qbYQTKLin0hJlNzWZEX7EprtxENS6IbmyKKzfVHJeqj0REJEFJQUREEqotKdxe6gDSUFy5iWpcEN3YFFduqjauqmpTEBGRzKrtSkFERDKomqRgZqeY2XwzW2hmFxd530PM7Dkzm2tmb5rZRcHyK83sPTObEfyclvSeS4JY55vZp0KMbYmZzQ72PzVYtquZTTCzt4LfuwTLzcyuD+KaZWajQorp4KRjMsPMNpnZj0txvMzsTjNbbWZvJC3L+fiY2fnB+m+Z2fmp9lWAuH5vZvOCff/bzHYOlg8zs21Jx+3WpPccGfz9Fwax9+juj2niyvnvVuj/1zRxPZAU0xIzmxEsL+bxSlc2lO475u4V/0Ns6u5FwP5Ab2AmMLKI+98LGBU8HgQsAEYCVwI/TbH+yCDGPsDwIPbakGJbAgzutOx3wMXB44uBa4LHpwHjid0x7yPAq0X6260E9ivF8QKOA0YBb+R7fIBdgcXB712Cx7uEENfJQK/g8TVJcQ1LXq/Tdl4Djg5iHg+cGkJcOf3dwvh/TRVXp9evBS4vwfFKVzaU7DtWLVcKY4CF7r7Y3XcA9wNnF2vn7r7C3acHjxuBucTuT53O2cD97r7d3d8GFhL7DMVyNjA2eDwW+HTS8rs95hVgZzPbK+RYTgQWuXumAYuhHS93n0TsXh+d95fL8fkUMMHd17n7emACcEqh43L3p9w9fs/UV4B9u7wxSRDbTu7+ssdKlruTPkvB4sog3d+t4P+vmeIKzva/CNyXaRshHa90ZUPJvmPVkhT2AZYmPV9G5kI5NGY2DDgCeDVY9MPgMvDO+CUixY3XgafMbJrF7oUNsIe7r4DYlxbYvQRxxZ1Dx3/WUh8vyP34lOK4fZPYGWXccDN73cyeN7Njg2X7BLEUI65c/m7FPl7HAqvc/a2kZUU/Xp3KhpJ9x6olKaSq9yt6tyszGwg8BPzY3TcBtwAHAB8CVhC7hIXixvsxdx8FnAr8wMyOy7BuUY+jxW7jehbwr2BRFI5XJuniKPZxuwxoAe4NFq0Ahrr7EcD/Av8ws52KGFeuf7di/z3PpeOJR9GPV4qyIe2qaWIoWGzVkhSWAUOSnu8LLC9mAGZWR+yPfq+7Pwzg7qvcvdXd24C/0F7lUbR43X158Hs18O8ghlXxaqHg9+pixxU4FZju7quCGEt+vAK5Hp+ixRc0MJ4BnBdUcRBUz6wNHk8jVl9/UBBXchVTKHHl8Xcr5vHqBXwWeCAp3qIer1RlAyX8jlVLUpgCjDCz4cHZ5znAo8XaeVBneQcw192vS1qeXB//GSDeM+JR4Bwz62Nmw4ERxBq4Ch3XADMbFH9MrKHyjWD/8d4L5wP/SYrra0EPiI8AG+OXuCHpcAZX6uOVJNfj8yRwspntElSdnBwsKygzOwX4OXCWu29NWl5vZrXB4/2JHZ/FQWyNZvaR4Dv6taTPUsi4cv27FfP/9ZPAPHdPVAsV83ilKxso5XesJy3n5fRDrNV+AbGsf1mR930MsUu5WcCM4Oc04B5gdrD8UWCvpPdcFsQ6nx72cMgQ1/7EenbMBN6MHxdgN+AZ4K3g967BcgNuCuKaDYwO8Zj1B9YC70taVvTjRSwprQCaiZ2NfSuf40Osjn9h8PONkOJaSKxeOf4duzVY93PB33cmMB04M2k7o4kV0ouAGwkGtBY4rpz/boX+f00VV7D8b8D3Oq1bzOOVrmwo2XdMI5pFRCShWqqPREQkC0oKIiKSoKQgIiIJSgoiIpKgpCAiIglKClI1zKzVOs6+mnH2TTP7npl9rQD7XWJmg/N436csNsPoLmY2rqdxiGSjV6kDECmibe7+oWxXdvdbu18rVMcCzxGb4fPFEsciVUJJQaqemS0hNs3Bx4NFX3b3hWZ2JbDZ3f9gZhcC3yM2p9Acdz/HzHYF7iQ2CHArcIG7zzKz3YgNlqonNkLXkvb1FeBCYlNCvwr8j7u3dornS8AlwXbPBvYANpnZUe5+VhjHQCRO1UdSTfp1qj76UtJrm9x9DLFRqn9K8d6LgSPc/YPEkgPAL4HXg2WXEptKGeAKYLLHJlR7FBgKYGaHAl8iNgnhh4BW4LzOO3L3B2if+/8DxEbQHqGEIMWgKwWpJpmqj+5L+v3HFK/PAu41s0eAR4JlxxCbEgF3f9bMdjOz9xGr7vlssPxxM1sfrH8icCQwJTblDf1on+issxHEpjIA6O+xufZFQqekIBLjaR7HnU6ssD8L+D8zO4zM0xWn2oYBY939kkyBWOy2qIOBXmY2B9jLYreK/JG7v5D5Y4j0jKqPRGK+lPT75eQXzKwGGOLuzwE/A3YGBgKTCKp/zOwEYI3H5sJPXn4qsdsjQmxis8+b2e7Ba7ua2X6dA3H30cDjxNoTfkdsQrgPKSFIMehKQapJv+CMO+4Jd493S+1jZq8SO1E6t9P7aoG/B1VDBvzR3TcEDdF3mdksYg3N8amOfwncZ2bTgeeBdwHcfY6Z/YLYne5qiM3Y+QMg1a1GRxFrkP4f4LoUr4uEQrOkStULeh+Ndvc1pY5FpNRUfSQiIgm6UhARkQRdKYiISIKSgoiIJCgpiIhIgpKCiIgkKCmIiEiCkoKIiCT8f920g8B7fYJEAAAAAElFTkSuQmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
