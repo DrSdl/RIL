@@ -41,13 +41,52 @@ and [here (critic)](https://github.com/DrSdl/RIL/blob/master/Tennis/checkpoint_c
 The original implementation of the DDPG network is based on Udacity's solution for the Bipedal [agent](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal).
 
 ## Instructions: ##
-The complete environment has been preinstalled in the following images. Depending on your platform, please download one of 
-the prepared Tennis environments (one agent):
+In order to run the Tennis environment standalone on your PC or Laptop the following steps are necessary:
+
+(1) Download Udacity's deep-reinforcement-learning repository from github [here](https://github.com/udacity/deep-reinforcement-learning).
+
+(2) Download the Tennis environment, depending on your operating system as follows:
 
 •	Linux: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
 •	Mac OSX: click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
 •	Windows (32-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
 •	Windows (64-bit): click [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
- 
-Open the notebook Tennis.ipynb and type “Shift”+”Enter” to execute the notebook’s cells. 
+
+(3) You now have the following two files:
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/download_files.jpg)
+
+(4) Unzip the drlnd master and go to the p3_collab-compet directory in the drlnd directory. Also, unzip the "Tennis_Windows_x86_64.zip", for example and put it into this director, too. You should now see the following files and directory:
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/tennis_dir.jpg)
+
+(5) You need to install a couple of dependencies. Go to the directory with name "python" in drlnd:
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/dir_python.jpg)
+
+(6) I am using the Anaconda environment. From an anaconda shell execute "pip install ." in this directory. Specifically this
+will install the Unity environment needed by the Tennis environment.
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/anaconda_install.jpg)
+
+(7) Finally, we need to create a python drlnd kernel for this particular dependency. This is done with 
+
+"python -m ipykernel install --user --name drlnd --display-name "drlnd""
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/drlnd_kernel.jpg)
+
+(8) We now activate the drlnd environment from an anaconda shell with "activate drlnd"
+
+(9) Please open a jupyter nodebook: type "jupyter notebook". A browser window opens. Under menu "Kernel" do "Change Kernel" to drlnd.
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/drlnd_notebook.jpg)
+
+(10) You can now start executing the code cells by typing “Shift”+”Enter”. In the second code cell of the notebook you still must insert the path to the Tennis environment exe-file downloaded above:
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/2ndcell_notebook.jpg)
+
+(11) Now, let's start coding!
+
+![](https://github.com/DrSdl/RIL/blob/master/Tennis/coding_notebook.jpg)
+
 
